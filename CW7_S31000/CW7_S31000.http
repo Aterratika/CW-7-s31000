@@ -1,0 +1,33 @@
+//Do testowania
+
+### [1] Pobierz wszystkie wycieczki
+GET http://localhost:5081/api/trips
+Accept: application/json
+
+
+### [2] Pobierz wycieczki konkretnego klienta
+GET http://localhost:5081/api/clients/{id}/trips
+Accept: application/json
+
+
+### [3] Dodaj nowego klienta
+POST http://localhost:5081/api/clients
+Content-Type: application/json
+
+{
+  "firstName": "",
+  "lastName": "",
+  "email": "",
+  "telephone": "",
+  "pesel": ""
+}
+
+
+### [4] Zapisz klienta na wycieczkę
+PUT http://localhost:5081/api/clients/{id}/trips/{tripId}
+Accept: application/json
+
+
+### [5] Usuń zapis klienta z wycieczki
+DELETE http://localhost:5081/api/clients/{id}/trips/{tripId}
+Accept: application/json
